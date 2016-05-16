@@ -29,7 +29,7 @@ TEST(ConnectXTest, inBoundsWidth)
 	ConnectX connect(5,5,3);
 	connect.placePiece(3);
 
-	ASSERT_EQ(-1, connect.at(-4,4));
+	ASSERT_EQ(0, connect.at(-4,4));
 }
 
 TEST(ConnectXTest, inBoundsHeight)
@@ -61,7 +61,7 @@ TEST(ConnectXTest, outBoundsWidth)
 {
 	ConnectX connect(5,5,3);
 	
-	ASSERT_EQ(-1, connect.at(7,4));
+	ASSERT_EQ(0, connect.at(4,4));
 }
 
 TEST(ConnectXTest, outBoundsHeight)
