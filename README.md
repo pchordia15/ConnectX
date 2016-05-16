@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pchordia15/ConnectX.svg?branch=master)](https://travis-ci.org/pchordia15/ConnectX)
+
 * Priyanka Chordia
 
 Bugs Found:
