@@ -3,7 +3,7 @@
 
 // constructor provides customized dimensions and number of
 // sequential pieces (x) it takes to win the game
-ConnectX::ConnectX(int wide, int high, int x)
+/*ConnectX::ConnectX(int wide, int high, int x)
 {   
 	//invalid input resets everything to default settings
 	if( wide <= 0 || high <= 0 || x <= 0)
@@ -26,7 +26,7 @@ ConnectX::ConnectX(int wide, int high, int x)
 	height = high;
 	toWin = x;
 	turn = BLACK;
-}
+}*/
 
 // changes turn to reflect whose turn it is
 void ConnectX::toggleTurn()
