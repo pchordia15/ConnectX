@@ -10,8 +10,5 @@ script:
   - make
   - ./ConnectXTest
   - gcov -b ConnectX.cpp
-after_success:
-  - coveralls --exclude lib --gcov-options '\-lp'
-  - make clean
 notifications:
   email: false
