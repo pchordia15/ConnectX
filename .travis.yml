@@ -1,4 +1,14 @@
+sudo: required
 language: cpp
-compiler:
-  - clang
-script: g++ main.cpp ConnectX.cpp ConnectX.h
+compiler: g++
+before install:
+  - sudo apt-get update
+  - sudo apt-get install libgtest-dev
+  - "cd /usr/src/gtest && sudo cmake . && sudo cmake --build . && sudo mv libg* /usr/local/lib/ ; cd -"
+  - pip install --user cpp-coveralls
+script:
+  - make
+  - ./ConnectXTest
+  - gcov -b ConnectX.cpp
+notifications:
+  email: false
